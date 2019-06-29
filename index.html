@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="architecture, yonatan, jonathan, wolde, portfolio"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>yonatan-wolde-portifolio</title>
+    
+<!--floating menue-->
+<script language="javascript" src="./Plugins/jquery_mini.js.download"></script>
+<script language="javascript" src="./Plugins/jquery.dimensions.js.download"></script>
+<script language="javascript">
+        var name = "#floatMenu";
+        var menuYloc = null;
+        
+                $(document).ready(function(){
+                        menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+                        $(window).scroll(function () { 
+                                offset = menuYloc+$(document).scrollTop()+"px";
+                                $(name).animate({top:offset},{duration:500,queue:false});
+                        });
+                }); 
+</script>
+
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
+ 
+
+
+<style>
+/*  <style type="text/css"  */
+
+body {
+    margin: 0;
+    font-family: Yu Gothic UI Light, Helvetica, sans-serif;
+    height:1500px;
+    background-image: url("vblr.jpg"); background-size: auto 100% ; background-blend-mode: soft-light;
+    
+}
+  
+h1 {
+  font-size: 30pt
+}
+
+
+
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("blk.jpg");
+
+  min-height: 220px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.top-container {
+  position: absolute;
+  background-color:  rgba(51, 51, 51, 0.377);
+  padding :10px ;
+  text-align: center;
+  margin: 0px;
+  widows: auto;
+  color: rgb(255, 255, 255)
+}
+
+/* The navbar */
+.topnav {
+  margin-top: 5px;
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0);
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+                                                  .div a {
+                                                    color: black;
+                                                  }
+
+                                                  .div a:hover {
+                                                    background-color:  #ddd;
+                                                  }
+
+
+
+                                                                                                                      .fa {
+                                                                                                                        float: left;
+                                                                                                                        padding: 10px;
+                                                                                                                        font-size: 30px;
+                                                                                                                        width: 20px;
+                                                                                                                        text-align: center;
+                                                                                                                        text-decoration: none;
+                                                                                                                        margin: 5px 2px;
+                                                                                                                      }
+
+
+                                                                                                                      .fa-facebook {
+                                                                                                                        background:none;
+                                                                                                                        color: white;
+                                                                                                                        
+                                                                                                                      }
+
+                                                                                                                     
+                                                                                                                      .fa-google {
+                                                                                                                        background:none;
+                                                                                                                        color: white;
+                                                                                                                        
+                                                                                                                      }
+
+                                                                                                                      .fa-linkedin {
+                                                                                                                        background:none;
+                                                                                                                        color: white;
+                                                                                                                        opacity: 50;
+                                                                                                                      }
+
+                                                                                                                     
+
+                                                                                                                      .fa-instagram {
+                                                                                                                        background:none;
+                                                                                                                        color: white;
+                                                                                                                      }
+
+                                                                                                                                                                                                                                       }
+
+                                                                                                                      .fa-telegram {
+                                                                                                                        background:none;
+                                                                                                                        color: white;
+                                                                                                                      }
+
+                                                                                                                  
+
+
+
+
+
+/* Style the header */
+
+
+
+
+
+                                                        .header {
+                                                          overflow: hidden;
+                                                          background-color: #fafafad7;
+                                                          padding:1px 1px ;
+                                                          z-index: 40;
+                                                        
+                                                        }
+
+                                                        .header a {
+                                                          float: left;
+                                                          color: black;
+                                                          text-align: center;
+                                                          padding: 12px;
+                                                          text-decoration: none;
+                                                          font-size: 18px; 
+                                                          line-height: 25px;
+                                                          border-radius: 4px;
+                                                        }
+
+                                                        .header a.logo {
+                                                          font-size: 25px;
+                                                          font-weight: bold;
+                                                          color: #222
+                                                        }
+
+                                                        .header a:hover {
+                                                          background-color: #ddd;
+                                                          color: black;
+                                                        }
+
+                                                        .header a.active {
+                                                          background-color: rgba(51, 51, 51, 0.500);
+                                                          color: white;
+                                                        }
+
+                                                        .header-right {
+                                                          float: right;
+                                                        }
+
+                                                        @media screen and (max-width: 500px) {
+                                                          .header a {
+                                                            float: none;
+                                                            display: block;
+                                                            text-align: left;
+                                                          }
+                                                          
+                                                          .header-right {
+                                                            float: none;
+                                                          }
+                                                        }
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+
+
+            body {
+              margin: 0;
+              padding: 0;
+              height: 100%;
+          }
+          
+          #particles-js {
+          
+              height: 900pt;
+          }
+
+
+
+
+iframe {
+  height:350px;
+  width:250px;
+  border: none;
+  border-top: 
+}
+
+
+
+
+
+
+
+            #div {
+              width: 150pt;
+              height: 300pt;
+              top: 220pt;
+              left: 20pt;
+              scroll-margin-top: 100pt;
+              position: absolute;
+              z-index: 9;
+              background-color: rgba(242, 242, 242, 0.800);
+              border: 1px solid #f1f1f1;
+              text-align: left;
+              text-indent: 5pt
+            }
+
+            #divheader {
+              padding: 10px;
+              cursor: move;
+              z-index: 10;
+              background-color: rgba(51, 51, 51, 0.500);
+              color: #ffffff;
+            }
+
+           
+                  #div1 {
+                    width: 450pt;
+                    height: 1100pt;
+                    top: 220pt;
+                    left: 190pt;
+                    scroll-margin-top: 100pt;
+                    position: absolute;
+                    z-index: 9;
+                    background-color: #f1f1f1;
+                    border: 1px solid #f1f1f1;
+                    text-align: left;
+                    text-indent: 5pt
+                  }
+
+                  #divheader1 {
+                    padding: 10px;
+                    cursor: move;
+                    z-index: 10;
+                    background-color:  rgba(51, 51, 51, 0.500);
+                    color: #fff;
+                  }
+
+
+                  #div2 {
+                    width: 175pt;
+                    height: 890pt;
+                    top: 220pt;
+                    left: 660pt;
+                    scroll-margin-top: 100pt;
+                    position: absolute;
+                    z-index: 9;
+                    background-color: #f1f1f1;
+                    border: 1px solid #f1f1f1;
+                    text-align: left;
+                    text-indent: 5pt
+                  }
+      
+                  #divheader2 {
+                    padding: 10px;
+                    cursor: move;
+                    z-index: 10;
+                    background-color:  rgba(51, 51, 51, 0.500);
+                    color: #fff;
+                  }
+
+                  #div3 {
+                    width: 150pt;
+                    height: 600pt;
+                    top: 220pt;
+                    left: 855pt;
+                    scroll-margin-top: 100pt;
+                    position: absolute;
+                    z-index: 9;
+                    background-color: #f1f1f1;
+                    border: 1px solid #f1f1f1;
+                    text-align: left;
+                    text-indent: 5pt
+                  }
+      
+                  #divheader3 {
+                    padding: 10px;
+                    cursor: move;
+                    z-index: 10;
+                    background-color:  rgba(51, 51, 51, 0.500);
+                    color: #fff;
+                  }
+
+
+                  #div4 {
+                    width: 600pt;
+                    height: 300pt;
+                    top: 1370pt;
+                    left: 190pt;
+                    scroll-margin-top: 100pt;
+                    position: absolute;
+                    z-index: 9;
+                    background-color: #f1f1f1;
+                    border: 1px solid #f1f1f1;
+                    text-align: left;
+                    text-indent: 5pt
+                  }
+      
+                  #divheader4 {
+                    padding: 10px;
+                    cursor: move;
+                    z-index: 10;
+                    background-color:  rgba(51, 51, 51, 0.500);
+                    color: #fff;
+                  }
+
+
+
+                  #div5 {
+                    width: 150pt;
+                    height: 700pt;
+                    top: 870pt;
+                    left: 855pt;
+                    scroll-margin-top: 100pt;
+                    position: absolute;
+                    z-index: 9;
+                    background-color: #f1f1f1;
+                    border: 1px solid #f1f1f1;
+                    text-align: left;
+                    text-indent: 5pt
+                  }
+      
+                  #divheader5 {
+                    padding: 10px;
+                    cursor: move;
+                    z-index: 10;
+                    background-color:  rgba(51, 51, 51, 0.500);
+                    color: #fff;
+                  }
+
+
+
+
+#floatMenu {
+  position:absolute;
+  z-index: 30;
+  top:1px;
+  left:50;
+  width:200px;
+  }
+ 
+   
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<div class="bg-img">
+        <div class="top-container">
+                <h1>Yonatan Wolde</h1>
+                <p>Portfolio and Resume.</p>
+                        <div class="topnav">
+                                        <a href="https://www.facebook.com/profile.php?id=100009114114470" class="fa fa-facebook"></a>
+                                        <a href="#" class="fa fa-linkedin"></a>
+                                        <a href="#" class="fa fa-instagram"></a>
+                                        <a href="https://t.me/Jonathanwolde" class="fa fa-telegram"></a>
+                                        <a href="#" class="fa fa-google"></a>
+
+
+                        </div>
+              </div>
+        </div>
+
+<div>
+
+        <div class="header" id="mainHeader">        
+                <script src="js/hideheader1.js"></script>
+                                <a href="#default" class="logo">Home</a>
+                                        <div class="header-right">
+                                      <a href="mor/contact.html">Contact</a>
+                                        <a href="mor/abtme.html">About</a>
+                                        </div>
+                                </div>
+              
+
+              
+
+
+<!-- <iframe src="tab.html" height="400" width="300"></iframe>  -->             
+
+
+<div id="floatMenu">
+                <div id="div" class="div">
+                                <div id="divheader"><a href="mor\abtme.html">About Me</a></div>
+                                <div id="content" >
+                                        <p>I am Yonatan Wolde, and i am third year Architecture student at EiABC, addis ababa university...</p>
+                                        <img src="img\log.jpg"; width="130";  >
+                                </div>
+                                <a href="mor/abtme.html">More</a>
+                        </div>      
+</div>
+              
+
+     
+                       
+                       
+
+
+                        <!-- bg   -->   
+                                 <div id="particles-js"></div>
+                                 <script type="text/javascript" src="js/particles.js"></script>
+                                 <script type="text/javascript" src="js/app.js"></script>
+
+
+
+
+
+<div>
+             
+              <!-- Draggable DIV -->
+              <div id="div1">
+                        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                        <div id="divheader1"><a href="mor\arc.html" style="color: black">Architecture</a></div>
+                        <div id="content1" >
+                                <img src="img\A\2s\333.jpg"; width="580pt";  style="padding: 1pt ;margin-top: 1pt; " >
+                                <p><b>Commercial Center</b> - second year second semester project, demolished and reconstructed design for Tana Gebeya building</p>
+                                
+                                <img src="img\A\3f\7.jpg"; width="580pt";  style="padding: 6pt" >                                
+                                <p><b>Residential Building</b> - Third year First semester project, this building is design for gola sefer that respects the sefer's trend and cultur. it increases social interaction.</p>
+                                <img src="img\A\3s\7.jpg"; width="580pt";  style="padding: 5pt" > 
+                                <p><b>Workshop</b> - Third year Second semester project, . . . . . ..</p>
+                             
+
+                        </div>
+                                
+                                <a href="mor/arc.html" style="color: black">More</a>
+                </div>
+
+                <!-- Draggable DIV -->
+              <div id="div2">
+                        <div id="divheader2"><a href="mor\grp.html" style="color: black">Graphics</a></div>
+                        <img src="img\G\3.jpg"; width="220pt";  style="padding: 4pt" >
+                        <p><b>Trip AD.</b> - Class project. flyer that navigates the way to lalibella and addresses the culture and heritage in it.  </p>
+                        <img src="img\G\2.jpg"; width="220pt";  style="padding: 4pt" >
+                        <p><b>Advertizing Banner</b> - My first paid project. i got commissioned by a friend to design a banner for new opening restaurant.  </p>
+                        <img src="img\G\1.png"; width="220pt";  style="padding: 4pt" >
+                        <img src="img\G\0.png"; width="220t";  style="padding: 4pt" >
+                        <p><b>Kebele ID Card</b> - I designed an identification card for my self and friends that express's the owners identity better. </p>
+                       
+                </div>
+
+                <!-- Draggable DIV -->
+              <div id="div3">
+                        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                        <div id="divheader3">Modeling</div>
+                        <img src="img\M\1.jpg"; width="180pt";  style="padding: 4pt" >
+                        <p><b>Anvil</b> - created this on blender watching tutorials. </p>
+                        <img src="img\M\2.jpg"; width="180t";  style="padding: 4pt" >
+                        <p><b>Minions</b> - trying to understand composition. </p>
+                        <img src="img\M\4.jpg"; width="180pt";  style="padding: 4pt" >
+                        <p><b>Donuts and a Mug</b> - Experimenting on lighting effect. Making it look like daylight.  </p>
+                        <img src="img\M\3.jpg"; width="180pt";  style="padding: 4pt" >
+                        <p><b>Alex.</b></p>
+                       
+
+                </div>
+
+                <!-- Draggable DIV -->
+              <div id="div4">
+                        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                        <div id="divheader4">Rendering</div>
+                        <p>Coming up...</p>
+                        
+                </div>
+
+                                 <!-- Draggable DIV -->
+              <div id="div5">
+                        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                        <div id="divheader5">Assignment</div>
+                        <a href="mor\CAD\a2.html" style="color: black"> <img src="mor\CAD\a1.jpg"; width="180pt";  style="padding: 4pt"></a>
+                        <p ><b>Assignment 1</b> - Addis Ababa Map. </p>
+                        <a href="mor\CAD\a1.html" style="color: black"><img src="mor\CAD\a2.jpg"; width="180t";  style="padding: 4pt" ></a>
+                        <p><b>Assignment 2</b> - SVG. </p>
+                        <a href="mor\CAD\a3.html" style="color: black"><img src="mor\CAD\a3.jpg"; width="180t";  style="padding: 4pt" ></a>
+                        <p><b>Assignment 3</b> - SVG. </p>
+                        <a href="mor\CAD\a4.html" style="color: black"><img src="mor\CAD\a4.jpg"; width="180t";  style="padding: 4pt" ></a>
+                        <p><b>Assignment 4</b> - SVG. </p>
+                        
+                </div>
+               
+
+                             
+</div>
+                                 
+
+
+</div>
+                                
+</body>
+</html>

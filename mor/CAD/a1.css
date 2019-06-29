@@ -1,0 +1,134 @@
+/* <style type="text/css"> */
+body {
+text-align: center;
+background-image: url(vblr.jpg);
+padding: 100px;
+padding-top: 10px;
+}
+h1 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+background-color: rgba(61, 61, 61, 0.500);
+color: white;
+}
+h2 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: white;
+background-color: rgba(61, 61, 61, 0.500);
+}
+.svgClass {
+background-color:rgba(128, 128, 128, 0);
+float:left;
+width:70%;
+color:#fff;
+padding:10px;
+box-sizing:border-box;
+}
+
+polygon{
+fill:white; 
+transition: 1s fill;
+}
+
+polygon:hover {
+fill: rgb(255, 255, 255);
+}
+
+.lideta { 
+    stroke:rgb(78, 78, 78);
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgba(70, 70, 70, 0.466);
+    fill-opacity: 50%;
+}
+
+.kirkos{
+    stroke:rgba(116, 116, 116, 0.534);
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgba(68, 72, 95, 0.521);
+    fill-opacity: 10%;}
+.nifas-silk{
+    stroke:rgb(32, 128, 218);
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgba(94, 64, 79, 0.425); 
+    fill-opacity: 50%;
+}
+
+.akaki-kaliti {
+    stroke:rgba(92, 150, 106, 0.452);
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgb(126, 82, 165);
+    fill-opacity: 10%;
+}
+
+.yeka{
+    stroke:rgb(70, 85, 55);
+    stroke-width: 2px;
+    stroke-dasharray: 3;
+    fill:rgb(106, 121, 170);
+    fill-opacity: 10%;
+}
+
+.bole{
+    stroke:green;
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgb(69, 94, 57); 
+    fill-opacity: 10%;
+}
+
+.kolfe-keraniyo{
+    stroke: rgba(131, 129, 117, 0.575);
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgb(123, 106, 145); 
+    fill-opacity: 50%;
+}
+
+.addis-ketema{
+    stroke:rgb(94, 121, 111);
+    stroke-width: 2px;
+    stroke-dasharray: 3;
+    fill:rgb(146, 132, 95);
+    fill-opacity: 50%;
+}
+
+.arada{stroke:rgb(172, 155, 138);
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgba(149, 152, 190, 0.74); 
+    fill-opacity: 50%;
+}
+
+.gulele{
+    stroke:rgb(197, 177, 141);
+    stroke-width: 2px; 
+    stroke-dasharray: 3; 
+    fill:rgb(140, 153, 96);
+    fill-opacity: 50%;
+}
+.removed{
+display: none;
+}
+button{
+    border:5px solid white;
+    background-color: unset;
+    font-size: 20px;
+    outline: none;
+    left: 0%;
+    text-align: left;
+}
+#button:hover{
+    fill: rgb(221, 83, 83);
+}
+#sidebar{
+    text-align: left;
+    float:right;
+    width:30%;
+    background:none;
+    color:#fff;
+    padding:0px;
+    box-sizing:border-box;
+}

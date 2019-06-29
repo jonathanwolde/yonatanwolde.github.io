@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>     <meta charset="UTF-8">     
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">     
+		<title>Assignment 1</title>         
+		 <link rel="stylesheet"  type="text/css"  href="a2.css"> </head> 
+		 <body>     
+			 <h1>SVG Practice 2</h1>     
+			 <br> <div class="projects">    SVG (Scalable Vector Graphics): Example 2              <br><br>  
+    <svg x="0px" y="0px" width="254.3px" height="254.3px" viewBox="0 0 254.3 254.3" enable-background="new 0 0 254.3 254.3" xml:space="preserve">
+			
+
+	
+	
+		<g class="dev1">
+			<circle class="dev1" fill=brown cx="127.2" cy="127.2" r="127.2"/>
+		</g>
+		<g class="dev5">
+			<ellipse class="dev5" fill=gray cx="138.9" cy="127.2" rx="85.6" ry="82"/>
+		</g>
+		<g class="dev2">
+			<circle class="dev2" fill=#3939ff88 cx="122.6" cy="54.7" r="16.3"/>
+			<ellipse class="dev2" fill=#3939ff88 cx="189" cy="68.8" rx="18.4" ry="17"/> 
+			<circle class="dev2" fill=#3939ff88 cx="217" cy="127.2" r="18.3"/>
+			<circle class="dev2" fill=#3939ff88 cx="198.3" cy="183" r="23.1"/>
+		</g>
+		<g class="dev3">
+			<circle class="dev3" fill="#75f555" cx="148" cy="37.5" r="17.2"/> 
+			<circle class="dev3" fill="#75f555"  cx="189" cy="85.8" r="17.2"/>
+			<circle class="dev3" fill="#75f555" cx="198.7" cy="142.7" r="17.2"/>
+			<circle class="dev3" fill="#75f555" cx="170.6" cy="195.8" r="17.2"/>
+		</g>
+		<g class="dev4">
+				<circle class="dev4" fill="#ffc46c" cx="143.4" cy="60.2" r="16.2"/>             
+				<circle class="dev4" fill="#ffc46c" cx="181.5" cy="60.2" r="16.2"/>             
+				<circle class="dev4" fill="#ffc46c" cx="175.1" cy="105.8" r="16.2"/>             
+				<circle class="dev4" fill="#ffc46c" cx="227.6" cy="142.7" r="16.2"/>             
+				<circle class="dev4" fill="#ffc46c" cx="152" cy="194.9" r="16.2"/>
+		</g>
+	
+
+    </svg>
+
+    </div>  
+    <div class="buttons" id="sidebar" >  
+			<button id="dev1">dev1</button><br><br>         
+			<button id="dev2">dev2</button><br><br>         
+			<button id="dev3">dev3</button><br><br>         
+			<button id="dev4">dev4</button><br><br>             
+		</div>  
+    <script>         
+		 const dev1Button = document.querySelector('#dev1');     
+		 const dev2Button = document.querySelector('#dev2');     
+		 const dev3Button = document.querySelector('#dev3');     
+		 const dev4Button = document.querySelector('#dev4');  
+     
+		  const dev1 = document.querySelector('.dev1');     
+			const dev2 = document.querySelector('.dev2');     
+			const dev3 = document.querySelector('.dev3');     
+			const dev4 = document.querySelector('.dev4');  
+       
+			 dev1Button.addEventListener('click', e =>{ 
+				 dev1.classList.toggle('removed');});  
+        dev2Button.addEventListener('click', e =>{ 
+					dev2.classList.toggle('removed');});  
+        dev3Button.addEventListener('click', e =>{ 
+					dev3.classList.toggle('removed');});  
+        dev4Button.addEventListener('click', e =>{ 
+					dev4.classList.toggle('removed');});  
+				</script> 
+				</body> 
+				</html>
